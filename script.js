@@ -423,17 +423,18 @@ function showProjectDetails(projectTitle, projectIndex) {
 
 // ===== EFECTOS ADICIONALES =====
 
-// Función para agregar efecto de parallax suave al scroll
+// Función para agregar efecto de parallax suave al scroll (DESHABILITADO)
 function initParallaxEffect() {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.pageYOffset;
-        const parallaxElements = document.querySelectorAll('.hero');
-        
-        parallaxElements.forEach(element => {
-            const speed = 0.5;
-            element.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-    });
+    // Efecto parallax deshabilitado para evitar problemas de superposición
+    // window.addEventListener('scroll', () => {
+    //     const scrolled = window.pageYOffset;
+    //     const parallaxElements = document.querySelectorAll('.hero');
+    //     
+    //     parallaxElements.forEach(element => {
+    //         const speed = 0.5;
+    //         element.style.transform = `translateY(${scrolled * speed}px)`;
+    //     });
+    // });
 }
 
 // Función para agregar efecto de typing en el título
